@@ -13,4 +13,6 @@ Only the spi_matches dataset is examined because it contains all of the match in
 
 ### Results
 
-Put your results here
+By utilizing feature engineering, I was able to construct a regression model which performs better than the baseline models which I tested.
+
+Despite the fact that feature engineering aided my final regression model, the model performed poorly overall, with predicted match scores having validation testing coefficients of determination equal to 0.092 and 0.068 when rounded to 3 decimal places. This is likely because the final regression model utilizes spi scores to predict match scores, and while there does exist a correlation between these two scores, the correlation coefficient is small and the variance between these features is high. Both of these factors limit the overall performance of the final regression model.
